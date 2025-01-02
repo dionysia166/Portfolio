@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  font-family: Roboto;
+  overflow-x: hidden;
+}
+
+body.popup-is-active {
+  overflow-y: hidden;
+}
+
+body.popup-is-active .popup-big-box {
+  display: block;
+}
+
+h1 {
+  letter-spacing: 2px;
+  -webkit-animation: 5s move-up-down forwards;
+          animation: 5s move-up-down forwards;
+}
+
+h2 {
+  letter-spacing: 2px;
+}
+
+h3 {
+  color: #79cdda;
+}
+
+/* RE-USEABLE */
+.bg-properties {
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.btn-pink {
+  color: #f6c2da;
+  border: 2px solid #f6c2da;
+}
+.btn-pink:hover {
+  color: #ea72a9;
+  border: 2px solid #ea72a9;
+}
+
+.btn-teal {
+  color: #79cdda;
+  border: 2px solid #79cdda;
+}
+.btn-teal:hover {
+  color: #2e96a6;
+  border: 2px solid #2e96a6;
+}
+
+.line {
+  width: 30%;
+  border: 1px solid #f6c2da;
+  -webkit-animation: 5s grow-line forwards;
+          animation: 5s grow-line forwards;
+}
+
+/* RE-USEABLE ANIMATIONS */
+@-webkit-keyframes move-up-down {
+  0% {
+    -webkit-transform: translateY(15px) scale(0.3);
+            transform: translateY(15px) scale(0.3);
+  }
+  40% {
+    -webkit-transform: translateY(-15px) scale(1);
+            transform: translateY(-15px) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
+}
+@keyframes move-up-down {
+  0% {
+    -webkit-transform: translateY(15px) scale(0.3);
+            transform: translateY(15px) scale(0.3);
+  }
+  40% {
+    -webkit-transform: translateY(-15px) scale(1);
+            transform: translateY(-15px) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes grow-line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes grow-line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+/* NAV BAR */
+.navbar {
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 5;
+}
+.navbar a {
+  color: #79cdda;
+}
+.navbar .navbar-brand {
+  font-family: "Bebas Neue", sans-serif;
+  color: #79cdda;
+}
+.navbar .navbar-brand .logo {
+  height: 70px;
+}
+.navbar .navbar-collapse {
+  -webkit-transition: none;
+  transition: none;
+}
+
+/* MAIN-BANNER */
+.main-banner {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/030/699/331/large_2x/a-cotton-candy-pink-background-with-fluffy-clouds-free-photo.jpg);
+  background-color: rgba(8, 30, 11, 0.429);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-banner h3 {
+  max-width: 650px;
+  -webkit-animation: 5s fade forwards;
+          animation: 5s fade forwards;
+  color: #fff;
+}
+.main-banner .btn {
+  -webkit-animation: 5s fade forwards;
+          animation: 5s fade forwards;
+}
+
+/* ABOUT */
+.about .about-text h2 {
+  color: #f6c2da;
+}
+.about .about-text h5 {
+  color: #6f6e6e;
+}
+.about .about-text p {
+  color: #808080;
+}
+.about .about-image {
+  background-image: url(https://sweetcarolineconfections.com/cdn/shop/products/bd940d3ac4ee00b3b3b2c013b3a3dd54_1024x1024@2x.jpg?v=1627869405);
+  height: 400px;
+}
+
+/* SERVICES */
+.services {
+  background-image: url(https://lusthome.com/cdn/shop/products/LH900458_Hypnotize---Candy-floss-and-Gluten-free_Thaumbnail_WEB_f002290f-3db8-4acd-862c-20b03b8f43be.jpg?v=1675700864);
+  background-color: rgba(81, 74, 81, 0.887);
+}
+.services h5 {
+  color: #f6c2da;
+}
+
+/* NEW RELEASES */
+.sale .product-image {
+  height: 300px;
+  position: relative;
+}
+.sale .product-image .sale-logo {
+  width: 120px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  -webkit-animation: 3s logo-movement infinite;
+          animation: 3s logo-movement infinite;
+}
+@-webkit-keyframes logo-movement {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+@keyframes logo-movement {
+  0% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+.sale .sale-text h5 {
+  color: #79cdda;
+}
+.sale .sale-text p {
+  color: #6f6e6e;
+}
+
+/* POP-UP */
+.popup-big-box {
+  background-color: rgba(146, 210, 220, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 10;
+}
+.popup-big-box .popup-content {
+  max-width: 900px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.popup-big-box .popup-content button {
+  padding: 2px 8px;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.popup-big-box .popup-content .popup-cart img {
+  height: 70px;
+}
+
+/* GALLERY */
+.gallery .gallery-image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .slick-arrow {
+  position: absolute;
+  z-index: 1;
+  font-size: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url(https://www.freeiconspng.com/thumbs/white-arrow-png/white-down-arrow-png-2.png);
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  top: 30%;
+}
+.gallery .slick-prev {
+  right: 5px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.gallery .slick-next {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.gallery .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.gallery .slick-dots button {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #6f6e6e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.gallery .slick-dots button:hover {
+  background-color: #808080;
+}
+.gallery .slick-dots .slick-active button {
+  background-color: #f6c2da;
+}
+
+/* CONTACT US BANNER */
+.contact-page-banner {
+  background-image: url(https://images.pexels.com/photos/11327900/pexels-photo-11327900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  padding: 200px 0;
+  background-color: rgba(81, 74, 81, 0.887);
+}
+.contact-page-banner h2 {
+  -webkit-animation: 5s move-up-down forwards;
+          animation: 5s move-up-down forwards;
+}
+.contact-page-banner h3 {
+  -webkit-animation: 5s fade forwards;
+          animation: 5s fade forwards;
+  color: #fff;
+}
+
+/* CONTACT FORM */
+.contact-form .contact-image {
+  background-image: url(candycup.png);
+  height: 400px;
+}
+.contact-form .contact-text label {
+  color: #79cdda;
+}
+
+/* FAQ */
+.faq .faq-header i,
+.faq .faq-header h4 {
+  color: #f6c2da;
+}
+.faq .accordion .accordion-button {
+  background-color: #f6c2da;
+}
+.faq .accordion .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* FOOTER */
+.footer p {
+  color: #79cdda;
+}
+.footer a {
+  display: inline-block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.footer a:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+.footer a i {
+  color: #79cdda;
+  font-size: 45px;
+}
+.footer a i:hover {
+  color: #3db7c9;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 992px) {
+  .main-banner {
+    height: 80vh;
+  }
+  .about .about-image {
+    height: 450px;
+  }
+  .about h3,
+  .sale h3,
+  .contact-form h3,
+  .faq h3 {
+    font-size: 28px !important;
+  }
+  .sale .product-image {
+    height: 200px;
+  }
+  .sale .product-image .sale-logo {
+    width: 80px;
+  }
+  .gallery .gallery-image {
+    height: 250px;
+  }
+  .gallery .slick-arrow {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .about .about-image {
+    height: 250px;
+  }
+  .popup-big-box .popup-content {
+    width: 400px;
+  }
+  .sale .product-image .sale-logo {
+    width: 100px;
+  }
+  .gallery .gallery-image {
+    height: 200px;
+  }
+  .gallery .slick-arrow {
+    width: 80px;
+    height: 80px;
+  }
+  .contact-form .contact-image {
+    height: 250px;
+  }
+}
+@media (max-width: 576px) {
+  .navbar .navbar-brand {
+    font-size: 20px !important;
+  }
+  .about .about-image {
+    height: 200px;
+  }
+  .services h5 {
+    font-size: 18px !important;
+  }
+  .services p {
+    font-size: 14px !important;
+  }
+  .sale .product-image .sale-logo {
+    width: 80px;
+  }
+  .gallery .gallery-image {
+    height: 150px;
+  }
+  .gallery .slick-arrow {
+    width: 60px;
+    height: 60px;
+  }
+  .contact-form .contact-image {
+    height: 200px;
+  }
+}

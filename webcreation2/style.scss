@@ -1,0 +1,630 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+
+$primary-color: #f6c2da;
+$secondary-color: #79cdda;
+$ternary-color: #808080;
+$quaternary-color: #6f6e6e;
+$primary-filter: rgba(81, 74, 81, 0.887);
+$secondary-filter: rgba(8, 30, 11, 0.429);
+$nav-scroll: #fdf4fc;
+
+body{
+    font-family: Roboto;
+    overflow-x: hidden;
+}
+
+body.popup-is-active{
+	overflow-y: hidden;
+}
+
+body.popup-is-active .popup-big-box{
+	display: block;
+}
+
+h1{
+    letter-spacing: 2px;
+    animation: 5s move-up-down forwards;
+}
+
+h2{
+    letter-spacing: 2px;
+}
+
+h3{
+    color: $secondary-color;
+}
+
+/* RE-USEABLE */
+
+.bg-properties{
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.btn-pink{
+    color: $primary-color;
+    border: 2px solid $primary-color;
+
+    &:hover{
+        color: darken($primary-color, 18%);
+        border: 2px solid darken($primary-color, 18%);
+    }
+
+}
+
+.btn-teal{
+    color: $secondary-color;
+    border: 2px solid $secondary-color;
+
+    &:hover{
+        color: darken($secondary-color, 25%);
+        border: 2px solid darken($secondary-color, 25%);
+    }
+
+}
+
+.line{
+    width: 30%;
+    border: 1px solid $primary-color;
+    animation: 5s grow-line forwards;
+}
+
+/* RE-USEABLE ANIMATIONS */
+
+@keyframes move-up-down{
+
+    0%{
+        transform: translateY(15px) scale(0.3);
+    }
+
+    40%{
+        transform: translateY(-15px) scale(1);
+
+    }
+
+    100%{
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+@keyframes fade{
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+
+}
+
+@keyframes grow-line{
+
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 30%;
+    }
+
+}
+
+/* NAV BAR */
+
+.navbar{
+    transition: 1s;
+    z-index: 5;
+
+    a{
+        color: $secondary-color;
+    }
+
+    .navbar-brand {
+        font-family: "Bebas Neue", sans-serif;
+        color: $secondary-color;
+
+        .logo {
+            height: 70px;
+        }
+
+    }
+
+    .navbar-collapse {
+        transition: none;
+    }
+
+}
+
+/* MAIN-BANNER */
+
+.main-banner{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/030/699/331/large_2x/a-cotton-candy-pink-background-with-fluffy-clouds-free-photo.jpg);
+    background-color: $secondary-filter;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    h3{
+        max-width: 650px;
+        animation: 5s fade forwards;
+        color: #fff;
+    }
+    
+    .btn{
+        animation: 5s fade forwards;
+    }
+
+}
+
+/* ABOUT */
+
+.about{
+
+    .about-text{
+
+        h2{
+            color: $primary-color;
+        }
+        
+        h5{
+            color: $quaternary-color;
+        }
+        
+        p{
+            color: $ternary-color;
+        }
+        
+    }
+
+    .about-image{
+        background-image: url(https://sweetcarolineconfections.com/cdn/shop/products/bd940d3ac4ee00b3b3b2c013b3a3dd54_1024x1024@2x.jpg?v=1627869405);
+        height: 400px;
+    }
+
+}
+
+/* SERVICES */
+
+.services{
+    background-image: url(https://lusthome.com/cdn/shop/products/LH900458_Hypnotize---Candy-floss-and-Gluten-free_Thaumbnail_WEB_f002290f-3db8-4acd-862c-20b03b8f43be.jpg?v=1675700864);
+    background-color: $primary-filter;
+
+    h5{
+        color: $primary-color;
+    }
+    
+}
+
+/* NEW RELEASES */
+
+.sale{
+
+    .product-image{
+        height: 300px;
+        position: relative;
+
+        .sale-logo{
+            width: 120px;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            animation: 3s logo-movement infinite;
+        }
+
+        @keyframes logo-movement {
+
+            0%{
+                transform: rotate(20deg);
+            }
+
+            50%{
+                transform: rotate(-20deg);
+            }
+
+            100%{
+                transform: rotate(20deg);
+            }
+        }
+
+    }
+
+    .sale-text{
+        
+        h5{
+            color: $secondary-color
+        }
+
+        p {
+            color: $quaternary-color;
+        }
+
+    }
+}
+
+/* POP-UP */
+
+.popup-big-box{
+    background-color: rgba(146, 210, 220, 60%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+
+    .popup-content{
+        max-width: 900px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        button{
+            padding: 2px 8px;
+            position: absolute;
+            right: 16px;
+            top: 16px;
+        }
+
+        .popup-cart{
+
+            img{
+                height: 70px;
+            }
+            
+        }
+    }
+
+}
+
+/* GALLERY */
+
+.gallery{
+
+    .gallery-image{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .slick-arrow{
+        position: absolute;
+        z-index: 1;
+        font-size: 0;
+        width: 100px;
+        height: 100px;
+        background-image: url(https://www.freeiconspng.com/thumbs/white-arrow-png/white-down-arrow-png-2.png);
+        background-size: cover;
+        background-position: center;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        top: 30%;
+    }
+    
+    .slick-prev{
+        right: 5px;
+        transform: rotate(-90deg);
+    }
+    
+    .slick-next{
+        transform: rotate(90deg);
+    }
+
+    .slick-dots{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        button{
+            font-size: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            background-color: #fff;
+            border: 1px solid $quaternary-color;
+            transition: .5s;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $ternary-color;
+            }
+            
+        }
+
+        .slick-active button{
+            background-color: $primary-color;
+        }
+
+    }
+
+}
+
+/* CONTACT US BANNER */
+
+.contact-page-banner{
+    background-image: url(https://images.pexels.com/photos/11327900/pexels-photo-11327900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    padding: 200px 0;
+    background-color: $primary-filter;
+
+    h2{
+        animation: 5s move-up-down forwards;
+    }
+
+    h3{
+        animation: 5s fade forwards;
+        color: #fff;
+    }
+    
+}
+
+/* CONTACT FORM */
+
+.contact-form{
+
+    .contact-image{
+        background-image: url(candycup.png);
+        height: 400px;
+    }
+
+    .contact-text{
+
+        label{
+            color: $secondary-color;
+        }
+
+    }
+
+}
+
+/* FAQ */
+
+.faq{
+    
+    .faq-header{
+
+        i,
+        h4{
+            color: $primary-color;
+        }
+        
+    }
+
+    .accordion{
+
+        .accordion-button{
+            background-color: $primary-color;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+        }
+    }
+
+}
+
+/* FOOTER */
+
+.footer{
+
+    p{
+        color: $secondary-color;
+    }
+
+    a{
+        display: inline-block;
+        transition: 0.2s;
+
+        &:hover{
+            transform: translateY(-15px);
+        }
+
+        i{
+            color: $secondary-color;
+            font-size: 45px;
+    
+            &:hover{
+                color: darken($secondary-color, 15%);
+            }
+    
+        }
+
+    }
+
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 992px) {
+
+    .main-banner{
+        height: 80vh;
+    }
+
+    .about{
+
+        .about-image{
+            height: 450px;
+        }
+
+    }
+
+    .about,
+    .sale,
+    .contact-form,
+    .faq{
+
+        h3{
+            font-size: 28px !important;
+        }
+        
+    }
+
+    .sale{
+
+        .product-image{
+            height: 200px;
+
+            .sale-logo{
+                width: 80px;
+            }
+        }
+
+    }
+
+    .gallery{
+
+        .gallery-image{
+            height: 250px;
+        }
+
+        .slick-arrow{
+            width: 80px;
+            height: 80px;
+        }
+
+    }
+
+}
+
+@media (max-width: 767px) {
+    
+    .about{
+
+        .about-image{
+            height: 250px;
+        }
+
+    }
+
+    .popup-big-box{
+
+        .popup-content{
+            width: 400px;
+        }
+
+    }
+
+    .sale{
+
+        .product-image{
+
+            .sale-logo{
+                width: 100px;
+            }
+
+        }
+
+    }
+
+    .gallery{
+
+        .gallery-image{
+            height: 200px;
+        }
+
+        .slick-arrow{
+            width: 80px;
+            height: 80px;
+        }
+        
+    }
+
+    .contact-form{
+
+        .contact-image{
+            height: 250px;
+        }
+    
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .navbar{
+
+        .navbar-brand{
+            font-size: 20px !important;
+        }
+
+    }
+    
+    .about{
+
+        .about-image{
+            height: 200px;
+        }
+
+    }
+
+    .services{
+
+        h5{
+            font-size: 18px !important;;
+        }
+
+        p{
+            font-size: 14px !important;
+        }
+
+    }
+
+    .sale{
+
+        .product-image{
+
+            .sale-logo{
+                width: 80px;
+            }
+            
+        }
+
+    }
+
+    .gallery{
+
+        .gallery-image{
+            height: 150px;
+        }
+
+        .slick-arrow{
+            width: 60px;
+            height: 60px;
+        }
+        
+    }
+
+    .contact-form{
+
+        .contact-image{
+            height: 200px;
+        }
+    
+    }
+
+}
+
+
+
+
+
+
+
+

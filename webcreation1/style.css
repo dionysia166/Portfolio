@@ -1,0 +1,639 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* * * * * * * * * * * * * GENERAL * * * * * * * * * * * * */
+
+body{
+	font-family: "Roboto", sans-serif;;
+}
+
+section {
+	padding: 90px 0;
+}
+
+h1{
+	color: #fff;
+	font-size: 70px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+
+h1 span{
+	color: #82CEDD;
+	display: block;
+}
+
+h2{
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/* * * * * * * * * * * * *  RE-USABLE  * * * * * * * * * * * * */
+
+.container{
+	max-width: 900px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn{
+	display: inline-block;
+	padding: 12px 20px;
+	border-radius: 20px;
+	font-size: 14px;
+	transition: 0.4s;
+	text-transform: capitalize;
+}
+
+.btn-dark:hover{
+	background-color: #B0010A;
+}
+
+.btn-light:hover{
+	background-color: #E0D8D7;
+}
+
+.btn-dark{
+	color: #fff;
+	background-color: #8D0405;
+}
+
+.btn-light{
+	color: #8D0405;
+	background-color: #fff;
+}
+
+.text-properties{
+	margin-bottom: 15px;
+	text-transform: capitalize;
+	font-size: 15px;
+}
+
+.title-flex{
+	display: flex;
+	gap: 15px;
+}
+
+.special-p{
+	font-size: 18px;
+	line-height: 24px;
+}
+
+/* * * * * * * * * * * * *  SECTION 1 - HEADER * * * * * * * * * * * * */
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+header .container{
+	max-width: 1200px;
+}
+
+.header-flex{
+	display: flex;
+	height: 130px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-holder{
+	width: 80px;
+}
+
+.logo-holder a{
+	color: #fff;
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	font-family: "Cedarville Cursive", cursive;
+	font-size: 22px;
+	text-transform: capitalize;
+}
+
+.logo-holder img{
+	max-width: 100%;
+	display: block;
+}
+
+.burger{
+	display: none;
+}
+
+.burger i{
+	color: #fff;
+	font-size: 30px;
+}
+
+.nav-menu{
+	list-style: none;
+	display: flex;
+	gap: 40px;
+}
+
+.nav-menu a{ 
+	color: white;
+	font-size: 16px;
+}
+
+.nav-menu a:hover{
+	text-decoration: underline;
+}
+
+/* * * * * * * * * * * * *  SECTION 1 - MAIN BANNER * * * * * * * * * * * * */
+
+.main-banner{
+	background-image: url(https://static.vecteezy.com/system/resources/previews/024/398/820/large_2x/abstract-colorful-oil-painting-background-illustration-ai-generative-free-photo.jpg);
+	background-color: rgb(0, 0, 0, 40%);
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center;
+	padding: 220px 0;
+}
+
+.main-banner p{
+	font-size: 16px;
+	color: #fff;
+	line-height: 24px;
+	max-width: 430px;
+	margin-bottom: 30px;
+}
+
+.main-banner i{
+	color: #fff;
+}
+
+/* * * * * * * * * * * * * SECTION 2 - ABOUT * * * * * * * * * * * * */
+
+.about-parent-flex{
+	display: flex;
+	gap: 100px;
+	align-items: center;
+}
+
+.about-text{
+	width: 50%;
+}
+
+.about-image{
+	background-image: url(https://media.istockphoto.com/id/521577939/photo/advance-of-inner-paint.jpg?s=612x612&w=0&k=20&c=cUO1rlOng7aqJPXUrCiG0KmC-9y7LgCxkYSuj2tRito=);
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: overlay;
+	background-color: rgba(255, 142, 15, 15%);
+	width: 50%;
+	height: 470px;
+	border-radius: 15px;
+}
+
+.about-section h2{
+	font-size: 46px;
+}
+
+.about-section p{
+	margin-bottom: 20px;
+}
+
+.about-section ul{
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+/* note: fix pseudo element to when text goes on 2 lines */
+
+.about-section li{
+	margin-bottom: 10px;
+	font-size: 15px;
+	color: #3F3D3C;
+}
+
+.about-section ul li:before {    
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    margin-right: 20px;
+    color: #8D0405;
+}
+
+/* * * * * * * * * * * * * SECTION 3 - READ MORE * * * * * * * * * * * * */
+.read-banner{
+	background-image: url(https://static.vecteezy.com/system/resources/previews/024/398/848/non_2x/abstract-colorful-oil-painting-background-illustration-ai-generative-free-photo.jpg);
+	background-color: rgb(0, 0, 0, 40%);
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center;
+	padding: 70px 0;
+	text-align: center;
+}
+
+.read-banner p{
+	color: #fff;
+	font-size: 35px;
+	margin-bottom: 40px;
+}
+
+/* * * * * * * * * * * * * SECTION 4 - INFORMATION * * * * * * * * * * * * */
+
+.information-parent-grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 40px;
+}
+
+.information-section i{
+	color: #B0010A;
+	font-size: 18px;
+}
+
+.information-section .title-flex > p:nth-of-type(1){
+	color: #B0010A;
+}
+
+.information-section h2{
+	font-size: 70px;
+}
+
+.info-paragraph p{
+	max-width: 350px;
+	margin-bottom: 70px;
+}
+
+.information-section .text-holder i{
+	margin-bottom: 15px;
+}
+
+.information-section h3{
+	font-size: 17px;
+	font-weight: 400;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+}
+
+.text-holder p{
+	font-size: 15px;
+	color: #6A7887;
+}
+
+/* * * * * * * * * * * * * SECTION 5 - TEAM * * * * * * * * * * * * */
+
+.team-parent-flex{
+	display: flex;
+	gap: 120px;
+	flex: 1;
+}
+
+.team-parent-grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 40px;
+}
+
+/*not sure if i need to put min-width and why exactly?*/
+.team-title-holder{
+	min-width: 350px;
+}
+
+.team-grid-holder{
+	width: rest;
+}
+
+.team-section h2{
+	font-size: 50px;
+	max-width: 200px;
+}
+
+.team-image{
+	height: 190px;
+	width: 190px;
+	border-radius: 22px;
+	margin-bottom: 10px;
+	background-size: cover;
+	background-position: center;
+}
+
+.team-card:nth-of-type(1) .team-image{
+	background-image: url(https://www.artnews.com/wp-content/uploads/2023/03/GettyImages-1239635363.jpg?w=2000);
+}
+
+.team-card:nth-of-type(2) .team-image{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV6eTo2hRjg4iWLZrTNoULplPjIu2bkxXDUw&usqp=CAU);
+}
+
+.team-card:nth-of-type(3) .team-image{
+	background-image: url(https://cdn.shopify.com/s/files/1/0595/4361/7588/files/7_457e8ac6-25f5-4f4a-b2ca-d8fec05c1209.jpg?v=1674181318);
+}
+
+.team-card:nth-of-type(4) .team-image{
+	background-image: url(https://i.pinimg.com/originals/e1/67/3a/e1673a83a2fc300735012819f9fb03bd.jpg);
+}
+
+.team-title-holder p{
+	color: #82CEDD
+}
+
+.team-title-holder i{
+	color: #82CEDD;
+	font-size: 18px;
+}
+
+.team-card i{
+	color: #82CEDD;
+	font-size: 20px;
+}
+
+.team-card p:nth-of-type(1){
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.team-card p:nth-of-type(2){
+	font-size: 14px;
+	margin-bottom: 14px;
+	color: #6A7887;
+}
+
+/* * * * * * * * * * * * * SECTION 6 - CONTACT * * * * * * * * * * * * */
+
+.contact{
+	background-image: url(https://static.vecteezy.com/system/resources/previews/027/937/570/non_2x/colorful-abstract-painted-background-oil-painting-on-canvas-fragment-of-artwork-abstract-painting-background-or-texture-ai-generated-free-photo.jpg);
+	background-color: rgb(0, 0, 0, 50%);
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center;
+	padding-top: 180px;
+	padding-bottom: 60px;
+}
+
+.contact-parent-flex{
+	display: flex;
+	gap: 15px;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+
+.contact i{
+	color: #82CEDD;
+	font-size: 20px;
+}
+
+.contact p{
+	color: #82CEDD;
+	font-size: 14px;
+}
+
+.contact-parent-flex p{
+	font-size: 18px;
+}
+
+.contact p:nth-of-type(1){
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+.contact p:nth-of-type(2){
+	text-align: center;
+}
+
+/* * * * * * * * * * * * * MEDIA QUERY * * * * * * * * * * * * */
+
+@media only screen and (max-width: 992px){
+	
+	/* GENERAL */
+
+	h1{
+		font-size: 54px;
+		max-width: 600px;
+	}
+
+	section{
+		padding: 70px 0;
+	}
+
+	/* MAIN BANNER */
+
+	.main-banner{
+		padding: 150px 0;
+	}	
+
+	/* ABOUT */
+
+	.about-parent-flex{
+		gap: 80px;
+	}
+
+	/* READ MORE */
+
+	.read-banner{
+		padding: 60px 0;
+	}
+
+	.read-banner p{
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+@media only screen and (max-width: 768px){
+
+	/* GENERAL */
+
+	h1{
+		font-size: 50px;
+	}
+
+	section{
+		padding: 60px 0;
+	}
+
+	/* HEADER */
+
+	.menu-holder{
+		display: none;
+	}
+
+	.burger{
+		display: block;
+	}
+
+	/* ABOUT */
+
+	.about-parent-flex{
+		gap: 60px;
+	}
+
+	.about-section h2{
+		font-size: 40px;
+	}
+
+	.about-section p{
+		font-size: 16px;
+	}
+
+	/* READ MORE */
+
+	.read-banner {
+		padding: 50px 0;
+	}
+
+	.read-banner p{
+		font-size: 25px;
+	}
+
+	/* INFORMATION */
+
+	.information-section h2{
+		font-size: 54px;
+	}
+
+	.info-paragraph p{
+		font-size: 16px;
+	}
+
+	/* TEAM */
+
+	.team-parent-flex{
+		gap: 50px;
+	}
+
+	.team-section h2{
+		font-size: 40px;
+	}
+	
+	.team-image{
+		height: 150px;
+	}
+
+	.team-title-holder{
+		width: 40%;
+	}
+
+	.team-grid-holder{
+		width: 60%;
+	}
+
+	/* CONTACT */
+
+	.contact{
+		padding: 60px 0;
+	}
+
+}
+
+@media only screen and (max-width: 576px){
+
+	/* GENERAL */
+
+	section{
+		padding: 50px 0;
+	}
+
+	h1{
+		font-size: 32px;
+		max-width: 400px;
+	}
+
+	/* MAIN BANNER */
+
+	.main-banner{
+		padding: 140px 0;
+	}
+
+	.main-banner p{
+		font-size: 14px;
+	}
+
+	/* ABOUT */
+
+	.about-parent-flex{
+		flex-direction: column-reverse;
+	}
+
+	.about-image{
+		height: 150px;
+		width: 100%;
+	}
+
+	.about-text{
+		width: 100%;
+	}
+
+	.about-parent-flex{
+		gap: 40px;
+	}
+
+	.about-section h2{
+		font-size: 32px;
+	}
+
+	/* READ BANNER */
+
+	.read-banner {
+		padding: 40px 0;
+	}
+
+	.read-banner p{
+		font-size: 26px;
+	}
+
+	/* INFORMATION */
+
+	.information-parent-grid{
+		grid-template-columns: repeat(1, 1fr);
+		gap: 35px;
+	}
+
+	.info-paragraph p{
+		margin-bottom: 40px;
+	}	
+
+	.information-section h2{
+		font-size: 32px;
+	}
+
+	/* TEAM */
+
+	.team-parent-grid{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.team-section h2{
+		font-size: 32px;
+		max-width: 100%;
+	}
+
+	.team-parent-flex{
+		display: block;
+	}
+
+	.team-title-holder{
+		width: 100%
+	}
+
+	.team-grid-holder{
+		width: 100%
+	}
+
+	.contact p:nth-of-type(1){
+		text-align: center;
+	}
+
+}
+
+
+

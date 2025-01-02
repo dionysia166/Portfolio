@@ -1,0 +1,315 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+/*	border: none !important;*/
+}
+
+/*	GENERAL */
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+section{
+	margin-bottom: 50px;
+}
+
+h1 {
+	color: #595757;
+	font-size: 60px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+h3 {
+	color: #97c2c5;
+	text-decoration: underline;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+h4 {
+	color: #595757;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+h5 {
+	color: #fff;
+}
+
+h6 {
+	font-size: 14px;
+	color: #595757;
+}
+
+ul {
+	padding-left: 22px;
+}
+
+li {
+	color: #737373;
+
+	margin-left: 16px;
+}
+
+ul li:last-child {
+	margin-bottom: 20px;
+}
+
+i {
+	font-size: 20px;
+}
+
+hr {
+	height: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	margin-bottom: 20px;
+}
+
+/* REUSABLE ELEMENTS*/
+
+.button {
+	background-color: #98c4c7;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px 20px;
+	display: inline-block;
+	border-radius: 5px;
+	transition: 0.4s;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.button:hover {
+	background-color: #6C9497;
+	text-decoration: underline;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	/* max-width: 800px; */
+ 	/* border: 1px dashed blue; */
+}
+
+.page-parent-flex {
+	display: flex;
+/*  border: 1px dashed black;*/
+} 
+
+.header {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+/* LEFT SIDE OF PAGE */ 
+
+.page-left-side {
+	background-color: #98c4c7;
+	padding: 50px;
+	width: 400px;
+}
+
+.page-left-side h2 {
+	color: #fff;
+}
+
+.page-left-side p {
+	color: #fff;
+}
+
+.page-left-side a{
+	color: #ffffff;
+}
+
+
+.sub-parent-flex {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	margin-bottom: 20px;
+}    
+
+.img-decoration {
+	height: 100px;
+	margin-bottom: 40px;
+}
+
+.img-holder {
+	align-content: center;
+/*  border: 1px dashed black;*/
+}
+
+.icon {
+	height: 24px;
+}
+
+.page-left-side hr {
+	background-color: #fff;
+}
+
+.page-left-side i {
+	color: #ffffff;
+}
+
+.page-left-side li {
+	color: #fff;
+	padding-left: 16px;
+	margin-left: 16px;
+	margin-bottom: 10px;
+}
+
+.technical h3 {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+/* publications and presentations */
+
+.presentations h3 {
+	color: #ffffff;
+}
+
+.publication-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.publication-list li {
+    margin-bottom: 15px;
+}
+
+.publication-list .title {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.publication-list .details {
+    font-size: 0.875rem;
+    color: #feffff;
+}
+
+.publication-list .details .type {
+    font-weight: bold;
+    color: rgb(245, 245, 245);
+}
+
+.publication-list .details .journal {
+    font-style: italic;
+    color: #e6f2f3;
+}
+
+.publication-list .details .contributors {
+    color: #b0c4c5;
+}
+
+.publication-list .details .role {
+    color: #feffff;
+}
+
+.publication-list .details .date {
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+.publication-list a {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: #ffdf91;
+    margin-top: 5px;
+}
+
+.publication-list a:hover {
+    text-decoration: underline;
+    color: #ffebc0;
+}
+
+/* RIGHT SIDE OF PAGE */
+
+.page-right-side {
+	padding: 50px;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.sub-heading {
+	background-color: #e9e9e9;
+	padding: 12px;
+	margin-bottom: 15px;
+}
+
+.sub-heading-flex{
+	display: flex;
+	gap: 10px;
+	align-items: center
+}
+
+.sub-heading hr{
+	height: 20px;
+	width: 2px;
+	color:#595757;
+	margin: 0;
+}
+
+.page-right-side h2 {
+	color: #595757;
+}
+
+.page-right-side p {
+	color: #737373;
+}
+
+.page-right-side hr {
+	background-color: #595757;
+}
+
+.page-right-side i {
+	color: #595757;
+	height: 1;
+}
+
+/* projects */
+
+.skills-dflex{
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.bold-text {
+	font-weight: 800;
+}
+
+.italic-text {
+	font-style: italic;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.project-desctiption{
+	margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+	.page-parent-flex {
+		flex-direction: column;
+	} 
+
+	.page-left-side {
+		width: 100%;
+	}
+	
+}
