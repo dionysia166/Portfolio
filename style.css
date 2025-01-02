@@ -201,7 +201,7 @@ nav .header-flex .menu-holder .header-menu a:hover {
   width: 30%;
 }
 .sidebar .card {
-  background-image: url(assets/1.JPG);
+  background-image: url(assets/holo.jpg);
   background-color: rgba(0, 0, 0, 0.25);
   background-blend-mode: overlay;
   position: fixed;
