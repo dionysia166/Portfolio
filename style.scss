@@ -1362,7 +1362,17 @@ footer {
         }
     }
 
-
+    .lessons{
+        .about-header{
+            .about-flex{
+                .about-text{
+                    h2{
+                        max-width: 400px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -1809,6 +1819,18 @@ footer {
                     .input,
                     textarea{
                         width: 35vh;
+                    }
+                }
+            }
+        }
+    }
+
+    .lessons{
+        .about-header{
+            .about-flex{
+                .about-text{
+                    h2{
+                        max-width: 200px;
                     }
                 }
             }

@@ -1405,6 +1405,9 @@ footer .copyright {
   .technologies .tech-flex .tech-card {
     padding: 15px;
   }
+  .lessons .about-header .about-flex .about-text h2 {
+    max-width: 400px;
+  }
 }
 @media (max-width: 768px) {
   section {
@@ -1671,5 +1674,8 @@ footer .copyright {
   .contact .contact-flex form .form-group .input,
   .contact .contact-flex form .form-group textarea {
     width: 35vh;
+  }
+  .lessons .about-header .about-flex .about-text h2 {
+    max-width: 200px;
   }
 }
