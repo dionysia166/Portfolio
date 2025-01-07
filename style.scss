@@ -163,9 +163,9 @@ ul{
 .image-container {
     position: relative;
     display: inline-block;
-  }
+}
   
-  .attribution {
+.attribution {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -174,12 +174,28 @@ ul{
     padding: 5px;
     display: none;
     text-decoration: none;
-  }
-  
-  .image-container:hover .attribution {
+}
+
+.image-container:hover .attribution {
     display: block;
-  }
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: $highlight-color;
+    color: #000000;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
   
+#back-to-top:hover {
+    background-color: darken($highlight-color, 20%);
+}  
 
 /* NAVIGATION */
 nav{
@@ -761,6 +777,7 @@ footer {
 
 /* LEARNING SECTION */
 .learning{
+    padding-top: 0;
     animation: 2.5s fall-bounce forwards;
 
     .about-header{
