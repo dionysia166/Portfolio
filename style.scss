@@ -183,7 +183,7 @@ ul{
 
 /* NAVIGATION */
 nav{
-    padding-top: $l-spacing;
+    padding: $l-spacing 0;
     margin-left: $sidebar-width;
 
     .header-flex{
@@ -484,6 +484,7 @@ footer {
 
 /* INTRODUCTION SECTION */
 .introduction{
+    padding-top: 0;
     animation: 2.5s fall-bounce forwards;
 
     h2{
@@ -1179,7 +1180,7 @@ footer {
 
     /* NAVIGATION */
     nav{
-        padding-top: $lm-spacing;
+        padding: $m-spacing;
         margin-left: 0;
 
         .header-flex{
@@ -1193,11 +1194,13 @@ footer {
     /* MAIN FLEX */
     .main-flex{
         flex-direction: column;
+        
     }
     
     /* SIDE BAR */
     .sidebar{
         width: 100%;
+        padding-top: 0;
 
         .card{
             position: static;
@@ -1379,7 +1382,7 @@ footer {
 
     /* NAVIGATION */
     nav{
-        padding-top: $m-spacing;
+        padding: $s-spacing;
 
         .header-flex{
             .menu-holder{
@@ -1582,6 +1585,7 @@ footer {
 
     /* NAVIGATION */
     nav{
+        padding: $xs-spacing;
 
         .header-flex{
 

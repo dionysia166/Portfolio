@@ -136,7 +136,7 @@ ul {
 
 /* NAVIGATION */
 nav {
-  padding-top: 50px;
+  padding: 50px 0;
   margin-left: 30%;
 }
 nav .header-flex {
@@ -602,6 +602,7 @@ footer .copyright {
 /* * * * * * * * * * * * * * * * HOME * * * * * * * * * * * * * * * * */
 /* INTRODUCTION SECTION */
 .introduction {
+  padding-top: 0;
   -webkit-animation: 2.5s fall-bounce forwards;
           animation: 2.5s fall-bounce forwards;
 }
@@ -1272,7 +1273,7 @@ footer .copyright {
   }
   /* NAVIGATION */
   nav {
-    padding-top: 40px;
+    padding: 30px;
     margin-left: 0;
   }
   nav .header-flex .menu-holder {
@@ -1289,6 +1290,7 @@ footer .copyright {
   /* SIDE BAR */
   .sidebar {
     width: 100%;
+    padding-top: 0;
   }
   .sidebar .card {
     position: static;
@@ -1421,7 +1423,7 @@ footer .copyright {
   }
   /* NAVIGATION */
   nav {
-    padding-top: 30px;
+    padding: 15px;
   }
   nav .header-flex .menu-holder ul a {
     font-size: 18px;
@@ -1530,6 +1532,9 @@ footer .copyright {
     height: 140px;
   }
   /* NAVIGATION */
+  nav {
+    padding: 10px;
+  }
   nav .header-flex .burger-holder {
     display: block;
   }
