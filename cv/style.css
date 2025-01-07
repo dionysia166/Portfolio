@@ -18,7 +18,7 @@ section{
 
 h1 {
 	color: #595757;
-	font-size: 60px;
+	font-size: 50px;
 	margin-bottom: 15px;
 	text-align: left;
 }
@@ -26,22 +26,22 @@ h1 {
 h3 {
 	color: #97c2c5;
 	text-decoration: underline;
-	margin-top: 20px;
 	margin-bottom: 15px;
 }
 
 h4 {
 	color: #595757;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 h5 {
 	color: #fff;
+	font-size: 16px;
 }
 
 h6 {
-	font-size: 14px;
+	font-size: 16px;
 	color: #595757;
 }
 
@@ -75,13 +75,17 @@ a {
 	color:#558f94;
 }
 
+p, 
+li {
+	font-size: 18px;
+}
 /* REUSABLE ELEMENTS*/
 
 .button {
 	background-color: #98c4c7;
 	color: #fff;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
 	padding: 10px 20px;
 	display: inline-block;
@@ -119,7 +123,7 @@ a {
 
 .page-left-side {
 	background-color: #98c4c7;
-	padding: 50px;
+	padding: 40px;
 	width: 400px;
 }
 
@@ -175,7 +179,7 @@ a {
 .technical h3 {
 	color: #fff;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 /* publications and presentations */
@@ -196,12 +200,12 @@ a {
 
 .publication-list .title {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 18px;
     color: #ffffff;
 }
 
 .publication-list .details {
-    font-size: 0.875rem;
+    font-size: 16px;
     color: #feffff;
 }
 
@@ -243,7 +247,7 @@ a {
 /* RIGHT SIDE OF PAGE */
 
 .page-right-side {
-	padding: 50px;
+	padding: 40px;
 	line-height: 1.5;
 	text-align: justify;
 }
@@ -317,3 +321,11 @@ a {
 	}
 	
 }
+
+/* @media print {
+
+    .page-break-media {
+        page-break-before: always;
+        padding-top: 50px;
+    }
+} */
