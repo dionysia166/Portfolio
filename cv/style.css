@@ -71,6 +71,10 @@ hr {
 	margin-bottom: 20px;
 }
 
+a {
+	color:#558f94;
+}
+
 /* REUSABLE ELEMENTS*/
 
 .button {
@@ -140,7 +144,7 @@ hr {
 }    
 
 .img-decoration {
-	height: 100px;
+	height: 120px;
 	margin-bottom: 40px;
 }
 
