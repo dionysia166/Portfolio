@@ -24,10 +24,11 @@ h1 {
 }
 
 h3 {
-	color: #97c2c5;
+	color: #6C9497;
 	text-decoration: underline;
 	margin-bottom: 15px;
 	padding-bottom: 1px;
+	font-size: 20px;
 }
 
 h4 {
@@ -120,9 +121,6 @@ li {
 	margin-bottom: 10px;
 }
 
-.job-desc {
-	margin-bottom: 20px;
-}
 
 /* LEFT SIDE OF PAGE */ 
 
@@ -132,6 +130,26 @@ li {
 	width: 300px;
 }
 
+/* timeline */
+.work-timeline{
+	border-left: 3px solid #909090;
+	padding-left: 40px;
+}
+.job-card:before{
+	position: absolute;
+	content: '';
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 3px solid #909090;
+	background-color: #ffffff;
+	left: -54px;
+}
+.job-card{
+	position: relative;
+}
+
+/* content */
 .page-left-side h2 {
 	color: #fff;
 }
@@ -143,7 +161,6 @@ li {
 .page-left-side a{
 	color: #ffffff;
 }
-
 
 .sub-parent-flex {
 	display: flex;
@@ -262,6 +279,10 @@ li {
 	padding: 40px;
 	line-height: 1.5;
 	text-align: justify;
+}
+
+.job-desc {
+	margin-bottom: 20px;
 }
 
 .sub-heading {
