@@ -1666,7 +1666,7 @@ footer .copyright {
     gap: 15px;
   }
   .learning .learning-timeline .timeline-card .timeline-header .header-flex .header .date-flex p {
-    font-size: 16px;
+    font-size: 14px;
   }
   /* ABOUT ME PAGE */
   .about-me .slider-holder .slick-prev {
@@ -1702,7 +1702,13 @@ footer .copyright {
   .contact .contact-flex form .form-group textarea {
     width: 35vh;
   }
+  .lessons .about-header .about-flex .about-text {
+    width: 65%;
+  }
   .lessons .about-header .about-flex .about-text h2 {
     max-width: 200px;
+  }
+  .lessons .about-header .about-flex .about-img {
+    width: 35%;
   }
 }

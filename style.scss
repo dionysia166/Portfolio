@@ -1771,7 +1771,7 @@ footer {
                         .header{
                             .date-flex{
                                 p{
-                                    font-size: $xs-font-size;
+                                    font-size: $xxs-font-size;
                                 }
                             }
                         }
@@ -1838,9 +1838,14 @@ footer {
         .about-header{
             .about-flex{
                 .about-text{
+                    width: 65%;
+
                     h2{
                         max-width: 200px;
                     }
+                }
+                .about-img{
+                    width: 35%;
                 }
             }
         }
