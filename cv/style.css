@@ -129,26 +129,6 @@ li {
 	width: 300px;
 }
 
-/* timeline */
-.work-timeline{
-	border-left: 3px solid #909090;
-	padding-left: 40px;
-}
-.job-card:before{
-	position: absolute;
-	content: '';
-	width: 18px;
-	height: 18px;
-	border-radius: 50%;
-	border: 3px solid #909090;
-	background-color: #ffffff;
-	left: -54px;
-}
-.job-card{
-	position: relative;
-}
-
-/* content */
 .page-left-side h2 {
 	color: #fff;
 }
@@ -175,7 +155,6 @@ li {
 
 .img-holder {
 	align-content: center;
-/*  border: 1px dashed black;*/
 }
 
 .icon {
@@ -274,6 +253,26 @@ li {
 
 /* RIGHT SIDE OF PAGE */
 
+/* timeline */
+.work-timeline{
+	border-left: 3px solid #909090;
+	padding-left: 40px;
+}
+.job-card:before{
+	position: absolute;
+	content: '';
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 3px solid #909090;
+	background-color: #ffffff;
+	left: -54px;
+}
+.job-card{
+	position: relative;
+}
+
+/* content */
 .page-right-side {
 	padding: 40px;
 	line-height: 1.5;
@@ -315,10 +314,16 @@ li {
 	background-color: #595757;
 }
 
-.page-right-side i {
+/* .page-right-side i {
 	color: #595757;
 	height: 1;
+} */
+
+.fa-arrow-right{
+	color: #558f94;
+	font-size: 14px;
 }
+
 
 /* projects */
 
@@ -343,7 +348,7 @@ li {
 	margin-bottom: 10px;
 }
 
-/* @media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 	.page-parent-flex {
 		flex-direction: column;
 	} 
@@ -352,7 +357,7 @@ li {
 		width: 100%;
 	}
 	
-} */
+}
 
 @media print {
 
