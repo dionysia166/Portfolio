@@ -28,7 +28,7 @@ h3 {
 	text-decoration: underline;
 	margin-bottom: 15px;
 	padding-bottom: 1px;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 h4 {
@@ -342,10 +342,11 @@ li {
 	font-weight: 800;
 }
 
-.italic-text {
+.skills-dflex p{
 	font-style: italic;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 20px;
+	color: #4d4d4d;
 }
 
 .project-desctiption{
