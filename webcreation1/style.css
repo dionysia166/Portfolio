@@ -390,11 +390,18 @@ header .container{
 	gap: 15px;
 	margin-bottom: 20px;
 	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+
 }
 
 .contact i{
 	color: #82CEDD;
-	font-size: 20px;
+	font-size: 28px;
+}
+
+.contact i:hover{
+	color: #66b6c6;
 }
 
 .contact p{
@@ -403,12 +410,11 @@ header .container{
 }
 
 .contact-parent-flex p{
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .contact p:nth-of-type(1){
 	text-align: right;
-	margin-bottom: 20px;
 }
 
 .contact p:nth-of-type(2){
