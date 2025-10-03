@@ -135,12 +135,19 @@ h3 {
 .navbar a {
   color: #79cdda;
 }
+.navbar a:hover {
+  color: #79cdda;
+  text-decoration: underline;
+}
 .navbar .navbar-brand {
   font-family: "Bebas Neue", sans-serif;
   color: #79cdda;
 }
 .navbar .navbar-brand .logo {
   height: 70px;
+}
+.navbar .navbar-toggler {
+  background-color: #f6c2da;
 }
 .navbar .navbar-collapse {
   -webkit-transition: none;
