@@ -3,16 +3,17 @@ function handleNavbar() {
     var nav = document.getElementById('navbar');
     var burgerMenu = document.getElementById('navbarSupportedContent');
 
-    // Navbar background color becomes white with scroll OR if the burger menu is opened. Otherwise, it remains transparent.
-    function updateNavBackground() {
-        if (window.pageYOffset > 90 || burgerMenu.classList.contains('show')) {
-            nav.style.backgroundColor = '#F6F9FF';
-            nav.style.borderBottom = '4px solid #79CDDA';
-        } else {
-            nav.style.backgroundColor = 'transparent';
-            nav.style.borderBottom = 'none';
-        }
+// Navbar background color becomes white with scroll OR if the burger menu is opened. Otherwise, it remains transparent.
+function updateNavBackground() {
+    if (window.pageYOffset > 90 || burgerMenu.classList.contains('show')) {
+        nav.style.backgroundColor = '#ffffffff';
+        nav.style.boxShadow = '0 2px 6px 0 rgba(0, 0, 0, .12), inset 0 -1px 0 0 #dadce0';
+    } else {
+        nav.style.backgroundColor = 'transparent';
+        nav.style.boxShadow = 'none';
     }
+}
+
 
     // The updateNavBackground function is assigned to the scroll event so that it can be called on scroll.
     window.onscroll = updateNavBackground;
