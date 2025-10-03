@@ -7,12 +7,14 @@
 /* GENERAL */
 
 $primary-color: #f6c2da;
+$primary-color-darken: darken($primary-color, 18%);
 $secondary-color: #79cdda;
+$secondary-color-darken:darken($secondary-color, 25%);
+
 $ternary-color: #808080;
 $quaternary-color: #6f6e6e;
 $primary-filter: rgba(81, 74, 81, 0.887);
 $secondary-filter: rgba(8, 30, 11, 0.429);
-$nav-scroll: #fdf4fc;
 
 body{
     font-family: Roboto;
@@ -53,8 +55,8 @@ h3{
     border: 2px solid $primary-color;
 
     &:hover{
-        color: darken($primary-color, 18%);
-        border: 2px solid darken($primary-color, 18%);
+        color: $primary-color-darken;
+        border: 2px solid $primary-color-darken;
     }
 
 }
@@ -64,8 +66,8 @@ h3{
     border: 2px solid $secondary-color;
 
     &:hover{
-        color: darken($secondary-color, 25%);
-        border: 2px solid darken($secondary-color, 25%);
+        color: $secondary-color-darken;
+        border: 2px solid $secondary-color-darken;
     }
 
 }
@@ -144,7 +146,8 @@ h3{
     }
 
     .navbar-toggler {
-        background-color: $primary-color
+        background-color: $primary-color;
+        color: $secondary-color;
     }
 
     .navbar-collapse {

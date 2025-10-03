@@ -148,6 +148,7 @@ h3 {
 }
 .navbar .navbar-toggler {
   background-color: #f6c2da;
+  color: #79cdda;
 }
 .navbar .navbar-collapse {
   -webkit-transition: none;
