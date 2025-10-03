@@ -6,6 +6,10 @@
 
 /* * * * * * * * * * * * * GENERAL * * * * * * * * * * * * */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
 	font-family: "Roboto", sans-serif;;
 }
@@ -449,6 +453,8 @@ header .container{
 		margin-bottom: 30px;
 	}
 
+}
+
 @media only screen and (max-width: 768px){
 
 	/* GENERAL */
@@ -634,6 +640,3 @@ header .container{
 	}
 
 }
-
-
-
