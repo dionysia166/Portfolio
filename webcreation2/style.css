@@ -40,6 +40,11 @@ h3 {
   background-blend-mode: multiply;
 }
 
+.medium-banner {
+  padding: 200px 0;
+  background-color: rgba(81, 74, 81, 0.887);
+}
+
 .btn-pink {
   color: #f6c2da;
   border: 2px solid #f6c2da;
@@ -63,6 +68,10 @@ h3 {
   border: 1px solid #f6c2da;
   -webkit-animation: 5s grow-line forwards;
           animation: 5s grow-line forwards;
+}
+
+.about-img-height {
+  height: 400px;
 }
 
 /* RE-USEABLE ANIMATIONS */
@@ -193,7 +202,6 @@ h3 {
 }
 .about .about-image {
   background-image: url(lollipop_sparkle.jpg);
-  height: 400px;
 }
 
 /* HOME PAGE - SERVICES */
@@ -342,11 +350,22 @@ h3 {
   background-color: #f6c2da;
 }
 
+/* ABOUT PAGE - BANNER */
+.about-page-banner {
+  background-image: url(candy-store-imagined.png);
+}
+
+/* ABOUT PAGE - OUR STORY */
+.about-us .about-text h2 {
+  color: #f6c2da;
+}
+.about-us .our-story {
+  background-image: url(shop.png);
+}
+
 /* CONTACT US - BANNER */
 .contact-page-banner {
   background-image: url(https://images.pexels.com/photos/11327900/pexels-photo-11327900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-  padding: 200px 0;
-  background-color: rgba(81, 74, 81, 0.887);
 }
 .contact-page-banner h2 {
   -webkit-animation: 5s move-up-down forwards;
@@ -358,7 +377,7 @@ h3 {
   color: #fff;
 }
 
-/* CONTACT - FORM */
+/* CONTACT US PAGE - FORM */
 .contact-form .contact-image {
   background-image: url(candycup.png);
   height: 400px;
@@ -367,7 +386,7 @@ h3 {
   color: #79cdda;
 }
 
-/* CONTACT - FAQ */
+/* CONTACT  US PAGE - FAQ */
 .faq .faq-header i,
 .faq .faq-header h4 {
   color: #f6c2da;
@@ -406,7 +425,7 @@ h3 {
   .main-banner {
     height: 80vh;
   }
-  .about .about-image {
+  .about-img-height {
     height: 450px;
   }
   .about h3,
@@ -430,7 +449,7 @@ h3 {
   }
 }
 @media (max-width: 767px) {
-  .about .about-image {
+  .about-img-height {
     height: 250px;
   }
   .popup-big-box .popup-content {
@@ -454,7 +473,7 @@ h3 {
   .navbar .navbar-brand {
     font-size: 20px !important;
   }
-  .about .about-image {
+  .about-image {
     height: 200px;
   }
   .services h5 {

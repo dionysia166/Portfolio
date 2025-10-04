@@ -50,6 +50,11 @@ h3{
     background-blend-mode: multiply;
 }
 
+.medium-banner{
+    padding: 200px 0;
+    background-color: $primary-filter;
+}
+
 .btn-pink{
     color: $primary-color;
     border: 2px solid $primary-color;
@@ -76,6 +81,10 @@ h3{
     width: 30%;
     border: 1px solid $primary-color;
     animation: 5s grow-line forwards;
+}
+
+.about-img-height{
+    height: 400px;
 }
 
 /* RE-USEABLE ANIMATIONS */
@@ -203,7 +212,6 @@ h3{
 
     .about-image{
         background-image: url(lollipop_sparkle.jpg);
-        height: 400px;
     }
 
 }
@@ -370,12 +378,32 @@ h3{
 
 }
 
+/* ABOUT PAGE - BANNER */
+
+.about-page-banner{
+    background-image: url(candy-store-imagined.png);
+}
+
+/* ABOUT PAGE - OUR STORY */
+
+.about-us{
+
+    .about-text {
+        h2 {
+            color: #f6c2da;
+        }
+    }
+
+    .our-story{
+        background-image: url(shop.png);
+    }
+
+}
+
 /* CONTACT US - BANNER */
 
 .contact-page-banner{
     background-image: url(https://images.pexels.com/photos/11327900/pexels-photo-11327900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    padding: 200px 0;
-    background-color: $primary-filter;
 
     h2{
         animation: 5s move-up-down forwards;
@@ -388,7 +416,7 @@ h3{
     
 }
 
-/* CONTACT - FORM */
+/* CONTACT US PAGE - FORM */
 
 .contact-form{
 
@@ -407,7 +435,7 @@ h3{
 
 }
 
-/* CONTACT - FAQ */
+/* CONTACT  US PAGE - FAQ */
 
 .faq{
     
@@ -472,12 +500,8 @@ h3{
         height: 80vh;
     }
 
-    .about{
-
-        .about-image{
-            height: 450px;
-        }
-
+    .about-img-height{
+        height: 450px;
     }
 
     .about,
@@ -520,12 +544,8 @@ h3{
 
 @media (max-width: 767px) {
     
-    .about{
-
-        .about-image{
-            height: 250px;
-        }
-
+    .about-img-height{
+        height: 250px;
     }
 
     .popup-big-box{
@@ -581,12 +601,8 @@ h3{
 
     }
     
-    .about{
-
-        .about-image{
-            height: 200px;
-        }
-
+    .about-image{
+        height: 200px;
     }
 
     .services{
