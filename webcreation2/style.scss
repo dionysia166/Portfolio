@@ -127,13 +127,17 @@ h3{
     transition: 1s;
     z-index: 5;
 
-    a{
+    .nav-link{
         color: $secondary-color;
     }
 
-    a:hover {
-        color: #79cdda;
+    .nav-link:hover {
+        color: $secondary-color;
         text-decoration: underline;
+    }
+
+    .nav-link:focus {
+        color: none;
     }
 
     .navbar-brand {

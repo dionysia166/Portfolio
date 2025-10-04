@@ -132,12 +132,15 @@ h3 {
   transition: 1s;
   z-index: 5;
 }
-.navbar a {
+.navbar .nav-link {
   color: #79cdda;
 }
-.navbar a:hover {
+.navbar .nav-link:hover {
   color: #79cdda;
   text-decoration: underline;
+}
+.navbar .nav-link:focus {
+  color: none;
 }
 .navbar .navbar-brand {
   font-family: "Bebas Neue", sans-serif;
