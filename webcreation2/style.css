@@ -126,7 +126,7 @@ h3 {
     width: 30%;
   }
 }
-/* NAV BAR */
+/* ALL PAGES - NAV BAR */
 .navbar {
   -webkit-transition: 1s;
   transition: 1s;
@@ -158,7 +158,7 @@ h3 {
   transition: none;
 }
 
-/* MAIN-BANNER */
+/* HOME PAGE - MAIN-BANNER */
 .main-banner {
   background-image: url(https://static.vecteezy.com/system/resources/previews/030/699/331/large_2x/a-cotton-candy-pink-background-with-fluffy-clouds-free-photo.jpg);
   background-color: rgba(8, 30, 11, 0.429);
@@ -181,7 +181,7 @@ h3 {
           animation: 5s fade forwards;
 }
 
-/* ABOUT HOME */
+/* HOME PAGE - ABOUT HOME */
 .about .about-text h2 {
   color: #f6c2da;
 }
@@ -196,7 +196,7 @@ h3 {
   height: 400px;
 }
 
-/* SERVICES */
+/* HOME PAGE - SERVICES */
 .services {
   background-image: url(https://lusthome.com/cdn/shop/products/LH900458_Hypnotize---Candy-floss-and-Gluten-free_Thaumbnail_WEB_f002290f-3db8-4acd-862c-20b03b8f43be.jpg?v=1675700864);
   background-color: rgba(81, 74, 81, 0.887);
@@ -205,7 +205,7 @@ h3 {
   color: #f6c2da;
 }
 
-/* NEW RELEASES */
+/* HOME PAGE - NEW RELEASES */
 .sale .product-image {
   height: 300px;
   position: relative;
@@ -253,7 +253,7 @@ h3 {
   color: #6f6e6e;
 }
 
-/* POP-UP */
+/* HOME PAGE - POP-UP */
 .popup-big-box {
   background-color: rgba(146, 210, 220, 0.6);
   width: 100vw;
@@ -283,7 +283,7 @@ h3 {
   height: 70px;
 }
 
-/* GALLERY */
+/* HOME PAGE - GALLERY */
 .gallery .gallery-image {
   width: 100%;
   height: 300px;
@@ -342,7 +342,7 @@ h3 {
   background-color: #f6c2da;
 }
 
-/* CONTACT US BANNER */
+/* CONTACT US - BANNER */
 .contact-page-banner {
   background-image: url(https://images.pexels.com/photos/11327900/pexels-photo-11327900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   padding: 200px 0;
@@ -358,7 +358,7 @@ h3 {
   color: #fff;
 }
 
-/* CONTACT FORM */
+/* CONTACT - FORM */
 .contact-form .contact-image {
   background-image: url(candycup.png);
   height: 400px;
@@ -367,7 +367,7 @@ h3 {
   color: #79cdda;
 }
 
-/* FAQ */
+/* CONTACT - FAQ */
 .faq .faq-header i,
 .faq .faq-header h4 {
   color: #f6c2da;
@@ -380,7 +380,7 @@ h3 {
           box-shadow: none;
 }
 
-/* FOOTER */
+/* ALL PAGES - FOOTER */
 .footer p {
   color: #79cdda;
 }
