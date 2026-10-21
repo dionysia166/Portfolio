@@ -364,7 +364,7 @@ li {
 	
 }
 
-@media print {
+/* @media print {
 
     .page-break-media {
         page-break-before: always;
@@ -374,4 +374,6 @@ li {
 	.media-margin {
 		margin-bottom: 20px;
 	}
-}
+} */
+
+
